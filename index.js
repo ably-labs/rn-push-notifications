@@ -2,6 +2,9 @@
  * @format
  */
 
+// Polyfill crypto.getRandomValues before anything imports ably — the
+// react-native-push plugin's ulid dependency needs it to generate device IDs.
+import 'react-native-get-random-values';
 import { AppRegistry } from 'react-native';
 import {
   getMessaging,
