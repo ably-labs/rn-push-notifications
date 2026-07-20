@@ -23,7 +23,6 @@ npm run ios       # physical device for actual pushes
 npm caches tarballs per version. After rebuilding `ably-2.24.0.tgz` with the same version number:
 
 ```sh
-npm install ./ably-2.24.0.tgz --force
 npx react-native start --reset-cache
 ```
 
