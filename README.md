@@ -1,6 +1,6 @@
 # rn-push-example
 
-Bare React Native (0.86) test app for the new **`ably/react-native-push`** plugin, installed from the local tarball `ably-2.24.0.tgz`.
+Bare React Native (0.86) test app for the new **`ably/react-native-push`** plugin.
 
 The app can activate the device for push, show its `deviceId`, and subscribe/unsubscribe the device to an Ably channel. Push transport is **FCM on Android** and **raw APNs on iOS** (both `transportType` values of the plugin), with the token fetched via `@react-native-firebase/messaging`.
 
@@ -16,14 +16,6 @@ The app can activate the device for push, show its `deviceId`, and subscribe/uns
 ```sh
 npm run android   # emulator must have Play Services
 npm run ios       # physical device for actual pushes
-```
-
-## Iterating on the ably tarball
-
-npm caches tarballs per version. After rebuilding `ably-2.24.0.tgz` with the same version number:
-
-```sh
-npx react-native start --reset-cache
 ```
 
 ## Where things live
